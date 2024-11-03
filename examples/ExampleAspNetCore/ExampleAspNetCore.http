@@ -1,0 +1,14 @@
+@ExampleAspNetCore_HostAddress = http://localhost:5136
+
+POST {{ExampleAspNetCore_HostAddress}}/api/v1/web-sms/
+Accept: application/json
+Content-Type: application/json
+
+{
+  "recipientAddressList": [
+    "436645978668"
+  ],
+  "content": "Hello from swagger 123!"
+}
+
+###
