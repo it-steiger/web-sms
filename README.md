@@ -1,4 +1,4 @@
-# WebSMS Service
+# Very simple WebSMS Service
 A library for sending web sms via linkmobility
 
 ## Getting Started
