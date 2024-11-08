@@ -9,12 +9,12 @@ namespace WebSmsClient.Models
         {
             RecipientAddressList = new List<string>();
         }
-        protected MessageBase(List<string> recipients)
+        protected MessageBase(IEnumerable<string> recipients)
         {
             RecipientAddressList = recipients;
         }
         
         [JsonProperty("recipientAddressList")]
-        public List<string> RecipientAddressList { get; set; }
+        public IEnumerable<string> RecipientAddressList { get; set; }
     }
 }

@@ -11,7 +11,7 @@ namespace WebSmsClient.Models
         {
             Content = string.Empty;
         }
-        public TextMessage(string content, List<string> recipients) : base(recipients)
+        public TextMessage(string content, IEnumerable<string> recipients) : base(recipients)
         {
             Content = content;
         }
