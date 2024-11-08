@@ -45,4 +45,11 @@ the access token was stored in the appsettings.json
 builder.Services.AddWebSmsClient(options => options
     .UseAccessToken(builder.Configuration.GetValue<string>("Access_Token")!));
 ```
- 
+For Example you can inject the IWebSmsService
+```csharp
+public class SendSmsCommandHandler(IWebSmsService smsService)()
+{
+
+}
+```
+
